@@ -1,0 +1,61 @@
+<app-menu-gral></app-menu-gral>
+<div class="container">
+    <div class="card">
+      <figure>
+        <img class="img-thumbnail" src="./assets/juegos/Juego_idiomas.jpg" alt="Avatar">
+      </figure>
+      <div class="contenido">
+        <p class="title"><strong> Jugando como se escribe</strong></p>
+        <div class="card-body">
+          El jugador elije el idioma con el que quiere jugar. Luego selecciona entre Colores, Números, Animales;
+          que desea saber como se escribe.
+        </div>
+        <br>
+        <p> <button class="btn btn-default btn-primary" (click)="Juego('Agilidad')">Jugar</button></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure>
+        <img class="img-thumbnail" src="./assets/juegos/Ahorcado.jpg" alt="Avatar">
+      </figure>
+      <div class="contenido">
+        <p class="title"><strong>Juego de ahorcado</strong></p>
+        <div class="card-body">
+          Es un juego de adivinanzas de lápiz y papel originalmente, trata de adivinarla según lo que sugiere por letras o 
+          dentro de un cierto número de oportunidades.
+        </div>
+        <p> <button class="btn btn-default btn-primary" (click)="Juego('Ahorcado')">Jugar</button></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure>
+        <img class="img-thumbnail" src="./assets/juegos/Juego_mayor_menor.png" alt="Avatar">
+      </figure>
+      <div class="contenido">
+        <p class="title"><strong>Juego de mayor o menor</strong></p>
+        <div class="card-body">
+          Los participantes sentados en círculo, se le pregunta a la primera persona si cree que la siguiente 
+          carta que saldrá será menor, mayor o igual al número de la que ya está abierta.
+        </div>
+        <p> <button class="btn btn-default btn-primary" (click)="Juego('MayorOMenor')">Jugar</button></p>
+      </div>
+    </div>
+
+    <div class="card">
+      <figure>
+        <img class="img-thumbnail" src="./assets/juegos/Preguntados.jpg" alt="Avatar">
+      </figure>
+      <div class="contenido">
+        <p class="title"><strong>Juego de preguntados</strong></p>
+        <div class="card-body">
+          Es un juego tipo trivial donde deberás responder el máximo de preguntas de 
+          forma correcta antes de que se acabe el tiempo
+        </div>
+        <br><br>
+        <p> <button class="btn btn-default btn-primary" (click)="Juego('Preguntados')">Jugar</button></p>
+      </div>
+    </div>
+</div>
+<app-pie-gral></app-pie-gral>

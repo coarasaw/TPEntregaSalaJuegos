@@ -1,0 +1,45 @@
+.container {
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+      max-width: 900px;
+      padding: 5px;
+  
+      /* SHADOW */
+      -webkit-box-shadow: 2px 2px 32px -6px rgba(146,34,34,0.6);
+      -moz-box-shadow: 2px 2px 32px -6px rgba(146,34,34,0.6);
+      box-shadow: 2px 2px 32px -6px rgba(146,34,34,0.6);
+}
+
+
+.btn-principal{
+    height: 3.125rem;
+    background-color: rgb(51, 51, 51);
+    border-color: rgb(0, 0, 0,0.1);
+    color: white;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn-quizz{
+    padding: 0px 50px;
+}
+
+.bg-black{
+    background-color: rgb(51, 51, 51);
+}
+
+.fas {
+    cursor: pointer;
+    font-size: 25px;
+    margin: 0px 2px;
+}
+
+.fa-chart-line{
+    color: darkcyan;
+}
+
+.fa-trash{
+    color: #a71c28;
+}

@@ -1,0 +1,38 @@
+<app-menu-gral></app-menu-gral>
+<div class="container">
+    <div class="row">  
+      <div class="col-sm-3">
+        <div class="img__container">
+          <span class="counter"> Vidas: {{vidas}}/{{vidasTotal}}</span>
+          <img src="../../../../assets/juegos/catas/{{numero}}.png" alt="">
+          
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <span class="counter"> Puntos: {{puntos}}</span>
+        <br>
+        <div class="mensaje win" *ngIf="win">
+          <span>{{mensajePuntosWin}}</span>
+        </div>
+        <div class="mensaje lose" *ngIf="lose">
+          <span>{{mensajePuntosLose}}</span>
+        </div>
+        <br>
+        <h2 *ngIf="!smsFinal" >La siguiente carta es:</h2>
+        <div class="mensaje lose" *ngIf="smsFinal">
+          <span>{{mensajeFinal}}</span>
+        </div>
+        <br>
+        <button type="submit" class="col btn" *ngIf="!smsFinal" (click)="Jugar('mayor')">Mayor</button>
+        <button type="submit" class="col btn" *ngIf="!smsFinal" (click)="Jugar('menor')">Menor</button>
+  
+        <button type="submit" class="col btn" *ngIf="smsFinal" (click)="Repetir()"><i class="fas fa-undo"></i>Otro</button>
+        <button type="submit" class="col btn" *ngIf="smsFinal" (click)="salirGame()">Salir</button>
+      </div>
+      <div class="text-center col-sm-4">
+        <h1>Menor o Mayor</h1>
+        <img src="../../../../assets/juegos/catas/todas.png" alt="" class="iconocarta">
+      </div>
+    </div>
+  </div>
+  <app-pie-gral></app-pie-gral>  

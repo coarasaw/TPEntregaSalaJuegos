@@ -1,0 +1,31 @@
+.conteiner{
+    background: #8E0E00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 85% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+  }
+
+img{  
+    display:flex;
+    margin:0 auto;
+}
+.titulo{
+    height: 3.125rem;
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;
+}
+.parrafoPropio{
+    color: white;
+}
+.anchoP{
+    width: 800px;
+}

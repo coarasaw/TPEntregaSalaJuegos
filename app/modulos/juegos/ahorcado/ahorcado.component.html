@@ -1,0 +1,41 @@
+<app-menu-gral></app-menu-gral>
+<div class="container">
+    <div class="row">  
+      <div class="col-sm-3">
+        <span class="message">Puntaje: </span>
+        <span class="counter">{{puntos}}</span>
+        <div class="img__container">
+          <img src="../assets/juegos/ahorcado/{{intntoes_usuarios}}.png" alt="">
+          <span class="message">Tentativas </span>
+          <span class="counter">{{intntoes_usuarios}}/{{intentos}}</span>
+          <div class="mensaje win" *ngIf="win">
+            <span>{{message}}</span>
+          </div>
+          <div class="mensaje lose" *ngIf="lose">
+            <span>{{message}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-5">
+        <div class="row justify-content-center">
+          <br><br>
+          <h1 class="h1Plabra">Seleccione una letra</h1>
+          <div class="word__container"  style="align-items: center;">
+            <h1> {{palabraOculta}} </h1>
+          </div>
+          <div class="letters">
+            <button class="letter_button" *ngFor="let letter of letters" (click)="checkLetter(letter)">{{letter}}</button>
+          </div>
+          <div class='row  justify-content-center' *ngIf="win || lose">
+              <button type="submit" class="botones_resultados col-3" (click)="salirGame()">Salir</button>
+              <button type="submit" class="botones_resultados col-3" (click)="restartGame()"><i class="fas fa-undo"></i>Otro</button>
+          </div>
+        </div>         
+      </div>
+      <div class="text-center col-sm-4">
+        <h1>Ahorcados</h1>
+        <img src="../../../../assets/juegos/ahorcado/logohome.png" alt="">
+      </div>
+    </div>  
+</div>      
+<app-pie-gral></app-pie-gral>  
